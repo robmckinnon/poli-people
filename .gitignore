@@ -1,0 +1,6 @@
+bin
+vendor/bundler_gems
+test
+config/database.yml
+.DS_Store
+doc
