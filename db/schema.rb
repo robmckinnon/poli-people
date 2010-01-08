@@ -9,6 +9,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20100108185305) do
+
+  create_table "uk2010_constituencies", :force => true do |t|
+    t.string  "name"
+    t.string  "alternate_name"
+    t.string  "wikipedia_uri"
+    t.integer "uk_country_id"
+    t.integer "uk_region_id"
+  end
+
+  add_index "uk2010_constituencies", ["uk_country_id"], :name => "index_uk2010_constituencies_on_uk_country_id"
+  add_index "uk2010_constituencies", ["uk_region_id"], :name => "index_uk2010_constituencies_on_uk_region_id"
+
+  create_table "uk_countries", :force => true do |t|
+    t.string "name"
+    t.string "wikipedia_uri"
+  end
+
+  create_table "uk_regions", :force => true do |t|
+    t.string  "name"
+    t.string  "wikipedia_uri"
+    t.integer "uk_country_id"
+  end
+
+  add_index "uk_regions", ["uk_country_id"], :name => "index_uk_regions_on_uk_country_id"
 
 end
