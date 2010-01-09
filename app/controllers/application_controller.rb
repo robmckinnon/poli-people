@@ -10,4 +10,11 @@ class ApplicationController < ActionController::Base
   
   def index
   end
+
+  def render_not_found message='Page not found.'
+    @title = "Page cannot be found (404 error)"
+    @crumbtrail = "Error: page cannot be found"
+    render :template => 'public/404.html', :status => 404
+  end
+
 end

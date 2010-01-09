@@ -2,7 +2,8 @@ ActionController::Routing::Routes.draw do |map|
 
   # The priority is based upon order of creation: first created -> highest priority.
 
-  map.constituencies '/constituencies', :controller => "constituencies", :action => 'index'
+  map.resources :constituencies
+  # map.constituencies '/constituencies', :controller => "constituencies", :action => 'index'
 
   map.root :controller => "application"
 
