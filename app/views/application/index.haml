@@ -1,0 +1,18 @@
+%h1 Who's Standing in the UK General Election 2010?
+%p
+  Constituency boundaries are changing at the next general election in England,
+  Wales, and Northern Ireland.
+%p
+  Enter your postcode here to find out what constituency you will be voting in
+  at the election, and who is standing as a candidate in that constituency. 
+%p Enter your UK postcode:
+- form_tag(constituencies_url, :method => :get) do
+  = text_field_tag 'pc', (@last_search_term ? @last_search_term : ''), :size => 24
+  = submit_tag 'Look up'
+
+- if flash[:not_found] && flash[:last_search_term]
+  %div.text.flash
+    - if flash[:last_search_term].strip.size < 3
+      = "<p>Sorry: we need more than two letters to search</p>"
+    - else
+      = "<p>Sorry: we couldn't find a constituency or MP when we searched for #{flash[:last_search_term]}."

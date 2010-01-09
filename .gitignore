@@ -5,3 +5,5 @@ config/database.yml
 .DS_Store
 doc
 log
+rerun.txt
+config/twfy_key.txt

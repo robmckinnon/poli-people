@@ -1,0 +1,12 @@
+aberdeen_north: 
+  uk_region_id: "2"
+  uk_country_id: "2"
+  name: Aberdeen North
+  wikipedia_uri: http://en.wikipedia.org/wiki/Aberdeen_North_%28UK_Parliament_constituency%29
+  alternate_name: Aberdeen North
+somerton_and_frome: 
+  uk_region_id: "10"
+  uk_country_id: "3"
+  name: Somerton and Frome
+  wikipedia_uri: http://en.wikipedia.org/wiki/Somerton_and_Frome_%28UK_Parliament_constituency%29
+  alternate_name: Somerton and Frome

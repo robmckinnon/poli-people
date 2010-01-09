@@ -18,4 +18,10 @@ only :test do
   gem "rspec"
   gem "rspec-rails"
   gem "test-unit", "1.2.3"
+  gem "ZenTest"
+  gem "autotest-rails"
+  gem "cucumber"
+  gem "cucumber-rails"
+  gem "database_cleaner"
+  gem "webrat"
 end
