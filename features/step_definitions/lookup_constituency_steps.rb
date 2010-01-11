@@ -17,7 +17,7 @@ When /^I search for "(.*)"$/ do |postcode_code|
   end
   
   Uk2010Constituency.stub!(:lookup_new_name).and_return twfy_result
-  
+    
   When "I fill in \"pc\" with \"#{postcode_code}\""
   And 'I press "Look up"'
 end

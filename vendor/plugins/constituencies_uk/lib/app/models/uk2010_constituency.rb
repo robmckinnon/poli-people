@@ -15,7 +15,7 @@ class Uk2010Constituency < ActiveRecord::Base
       if name.nil? || name[/Unknown postcode, or problem with lookup/]
         nil
       else
-        find_by_name(name)
+        find_by_name(name) || find_by_alternate_name(name)
       end
     end
     
