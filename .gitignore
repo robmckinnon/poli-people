@@ -1,4 +1,5 @@
 bin
+tmp
 vendor/bundler_gems
 test
 config/database.yml
@@ -7,4 +8,11 @@ doc
 log
 rerun.txt
 config/twfy_key.txt
+public/stylesheets
+public/images/famfamfam_silk_icons_v013*
+public/images/grid.png
+public/images/polipeople.png
+public/images/polipeople.svg
+public/images/pp.png
+public/images/pp.svg
 \#*\#
